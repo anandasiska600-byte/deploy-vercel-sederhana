@@ -3,47 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <title>Flower's Store</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #ff6f91;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .product {
+            background: white;
+            display: flex;
+            gap: 20px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-info h3 {
+            margin: 0 0 10px;
+        }
+
+        .price {
+            color: #ff6f91;
+            font-weight: bold;
+        }
+
+        button {
+            background: #ff6f91;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #ff4f79;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
 
-<h1 class="title">Flower's Store</h1>
-<p class="subtitle">Tempat beli flower's segar dengan harga terjangkau!</p>
+<header>
+    <h1>Flower's Store</h1>
+    <p>Tempat beli bunga segar dengan harga terjangkau 🌸</p>
+</header>
 
-<div class="product-container">
+<div class="container">
 
-    <div class="card">
-        <img src="teratai.jpeg" alt="">
-        <h3>Teratai</h3>
-        <p>Rp 250.000</p>
-        <button>Beli Sekarang</button>
+    <div class="product">
+        <img src="images/teratai.jpg" alt="Teratai">
+        <div class="product-info">
+            <h3>Teratai</h3>
+            <p class="price">Rp 25.000</p>
+            <button>Beli Sekarang</button>
+        </div>
     </div>
 
-    <div class="card">
-        <img src="mawar.jpeg" alt="">
-        <h3>Mawar</h3>
-        <p>Rp 150.000</p>
-        <button>Beli Sekarang</button>
+    <div class="product">
+        <img src="images/mawar.jpg" alt="Mawar">
+        <div class="product-info">
+            <h3>Mawar</h3>
+            <p class="price">Rp 15.000</p>
+            <button>Beli Sekarang</button>
+        </div>
     </div>
 
-    <div class="card">
-        <img src="tulip.jpeg" alt="">
-        <h3>Tulip</h3>
-        <p>Rp 75.000</p>
-        <button>Beli Sekarang</button>
+    <div class="product">
+        <img src="images/tulip.jpg" alt="Tulip">
+        <div class="product-info">
+            <h3>Tulip</h3>
+            <p class="price">Rp 75.000</p>
+            <button>Beli Sekarang</button>
+        </div>
     </div>
 
-    <div class="card">
-        <img src="anggrek.jpeg" alt="">
-        <h3>Anggrek</h3>
-        <p>Rp 25.000</p>
-        <button>Beli Sekarang</button>
+    <div class="product">
+        <img src="images/anggrek.jpg" alt="Anggrek">
+        <div class="product-info">
+            <h3>Anggrek</h3>
+            <p class="price">Rp 25.000</p>
+            <button>Beli Sekarang</button>
+        </div>
     </div>
 
 </div>
 
 <footer>
-         © 2025 Flower's Store
+    <p>© 2025 Flower's Store</p>
 </footer>
 
 </body>
