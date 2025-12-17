@@ -2,134 +2,51 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Flower's Store</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f5f5;
-        }
-
-        header {
-            background: #ff6f91;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .product {
-            background: white;
-            display: flex;
-            gap: 20px;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-
-        .product img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .product-info {
-            flex: 1;
-        }
-
-        .product-info h3 {
-            margin: 0 0 10px;
-        }
-
-        .price {
-            color: #ff6f91;
-            font-weight: bold;
-        }
-
-        button {
-            background: #ff6f91;
-            border: none;
-            padding: 10px 15px;
-            color: white;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background: #ff4f79;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #222;
-            color: white;
-            margin-top: 30px;
-        }
-    </style>
+    <title>Merchandise Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Flower's Store</h1>
-    <p>Tempat beli bunga segar dengan harga terjangkau 🌸</p>
+    <h1>Merchandise Store</h1>
+    <p>Temukan merchandise keren dengan harga terjangkau!</p>
 </header>
 
-<div class="container">
+<section class="product-container">
 
-    <div class="product">
-        <img src="teratai.jpeg" alt="Teratai">
-        <div class="product-info">
-            <h3>Teratai</h3>
-            <p class="price">Rp 25.000</p>
-            <button>Beli Sekarang</button>
-        </div>
+    <div class="product-card">
+        <img src="images/teratai.jpg" alt="Hoodie Premium">
+        <h3>Hoodie Premium</h3>
+        <p class="price">Rp 150.000</p>
+        <button>Add to Cart</button>
     </div>
 
-    <div class="product">
-        <img src="images/mawar.jpeg" alt="Mawar">
-        <div class="product-info">
-            <h3>Mawar</h3>
-            <p class="price">Rp 15.000</p>
-            <button>Beli Sekarang</button>
-        </div>
+    <div class="product-card">
+        <img src="images/mawar.jpg" alt="Kaos Graphic Tee">
+        <h3>Kaos Graphic Tee</h3>
+        <p class="price">Rp 120.000</p>
+        <button>Add to Cart</button>
     </div>
 
-    <div class="product">
-        <img src="images/tulip.jpeg" alt="Tulip">
-        <div class="product-info">
-            <h3>Tulip</h3>
-            <p class="price">Rp 75.000</p>
-            <button>Beli Sekarang</button>
-        </div>
+    <div class="product-card">
+        <img src="images/tulip.jpg" alt="Totebag Custom">
+        <h3>Totebag Custom</h3>
+        <p class="price">Rp 75.000</p>
+        <button>Add to Cart</button>
     </div>
 
-    <div class="product">
-        <img src="images/anggrek.jpeg" alt="Anggrek">
-        <div class="product-info">
-            <h3>Anggrek</h3>
-            <p class="price">Rp 25.000</p>
-            <button>Beli Sekarang</button>
-        </div>
+    <div class="product-card">
+        <img src="images/anggrek.jpg" alt="Sticker Pack">
+        <h3>Sticker Pack</h3>
+        <p class="price">Rp 25.000</p>
+        <button>Add to Cart</button>
     </div>
 
-</div>
+</section>
 
 <footer>
-    <p>© 2025 Flower's Store</p>
+    © 2025 Merchandise Store – All rights reserved
 </footer>
 
 </body>
 </html>
-
-
